@@ -29,22 +29,22 @@ void run()
 					arr[temp]=true;
 					cnt++;
 				}
-                st=en+1;
+				st=en+1;
 				en=str.find(',', st);
 				if(en==-1) {
-                    temp=str.substr(st, str.size());
-                    if(arr.find(temp)!=arr.end() && !arr[temp]) {
-					    arr[temp]=true;
-					    cnt++;
-				    }
-                    break;
-                }
+					temp=str.substr(st, str.size());
+					if(arr.find(temp)!=arr.end() && !arr[temp]) {
+						arr[temp]=true;
+						cnt++;
+					}
+					break;
+				}
 			}
 		} else {
 			if(arr.find(str)!=arr.end() && !arr[str]) {
-                arr[str]=true;
+				arr[str]=true;
 				cnt++;
-            }
+			}
 		}
 		cout<<n-cnt<<'\n';
 	}
@@ -52,8 +52,8 @@ void run()
 
 int main()
 {
-    ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-    init();
+	ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+	init();
 	run();
 	return 0;
 }

@@ -45,8 +45,10 @@ void run()
 		ranking[v[i].sq] = index++;
 		if(v[i].g == v[i+1].g)
 			if(v[i].s == v[i+1].s)
-				if(v[i].b == v[i+1].b)
+				if(v[i].b == v[i+1].b) {
 					ranking[v[i+1].sq] = index-1;
+                    index++;
+                }
 	}
 }
 

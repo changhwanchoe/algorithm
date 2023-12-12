@@ -21,8 +21,8 @@ void run()
 	for(int i=0;i<v.size();i++) {
 		if(v[i] > score)
 			ans++;
-		else if(v[i] == score);
-		else break;
+		else if(v[i] < score)
+			break;
 		cnt++;
 	}
 	if(n==0)
